@@ -1,0 +1,95 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2B3541;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1817px;
+  margin: 37px auto 11px;
+}
+.nav {
+  max-width: 1147px;
+  width: 100%;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+.nav-item {
+  margin-right: 54px;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 150%;
+}
+.fb {
+  margin-left: 30px;
+}
+.wrapper {
+  max-width: 1325px;
+  margin-left: 20.3%;
+}
+.banner {
+  background: url(../img/girl.png) no-repeat;
+  height: 852px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: right;
+  margin-bottom: 161px;
+}
+.banner-top {
+  max-width: 676px;
+  padding-top: 194px;
+}
+.banner-bottom {
+  margin-left: 90px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.banner-subtitle {
+  font-size: 40px;
+  line-height: 125%;
+  margin-bottom: 21px;
+}
+.banner-description {
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 297px;
+  margin-left: 90px;
+  margin-bottom: 60px;
+}
+.banner-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 22px 30px;
+  background: #FBF138;
+  box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+  color: #2B3541;
+  text-decoration: none;
+  margin-left: 90px;
+}
+.title-h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 125%;
+  margin-bottom: 38px;
+}
+.events-image {
+  display: flex;
+}
+.events-item {
+  margin-right: 20px;
+}
