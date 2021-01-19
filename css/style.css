@@ -87,9 +87,66 @@ body {
   line-height: 125%;
   margin-bottom: 38px;
 }
+.events {
+  margin-bottom: 160px;
+}
 .events-image {
   display: flex;
+  flex-wrap: wrap;
 }
 .events-item {
+  display: flex;
+  background: url(../img/maraphon.png) no-repeat;
+  height: 600px;
+  max-width: 367px;
+  flex-direction: column;
+  justify-content: space-between;
   margin-right: 20px;
+  flex-basis: 367px;
+}
+.img-01 {
+  background: url(../img/maraphon.png) center no-repeat;
+}
+.img-02 {
+  background: url(../img/train.png) center no-repeat;
+}
+.img-03 {
+  background: url(../img/yoga.png) center no-repeat;
+}
+.events-top {
+  margin:30px;
+}
+.date {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  opacity: 0.6;
+  margin-bottom: 2px;
+}
+.events-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  margin-top: 0;
+}
+.events-bottom p {
+  font-size: 18px;
+  line-height: 150%;
+  padding: 10px 20px;
+  background-color: #FBF138;
+  text-align: center;
+  margin:0;
+}
+.events-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+.schedule-title {
+  display: flex;
+  justify-content: space-between;
+}
+.schedule-date {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
 }
