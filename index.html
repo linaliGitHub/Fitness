@@ -19,8 +19,9 @@
       </ul>
     </div>
     <div class="social">
-      <img class="inst" src="img/IN.svg" alt="instagram">
-      <img class="fb" src="img/FB.svg" alt="FB">
+      <a class="inst-link" href="#"><img class="inst" src="img/IN.svg" alt="instagram"></a>
+      <a class="inst-link" href="#"><img class="fb" src="img/FB.svg" alt="FB"></a>
+
     </div>
   </header>
   
@@ -47,6 +48,7 @@
             <div class="events-top">
               <p class="date">29.06 - 4.07</p>
               <h3 class="events-title">Марафон выносливости</h3>
+              <a class="events-active" href="#">Учавствовать</a>
             </div>
             <div class="events-bottom">
               <p>марафон</p>
@@ -56,6 +58,7 @@
             <div class="events-top">
               <p class="date">9.07</p>
               <h3 class="events-title">Как стать тренером?</h3>
+              <a class="events-active" href="#">Учавствовать</a>
             </div>
             <div class="events-bottom">
               <p>вебинар</p>
@@ -65,6 +68,7 @@
             <div class="events-top">
               <p class="date">15.07</p>
               <h3 class="events-title">Йога, как стиль жизни</h3>
+              <a class="events-active" href="#">Учавствовать</a>
             </div>
             <div class="events-bottom">
               <p>вебинар</p>
@@ -84,6 +88,7 @@
               <div class="workout-bottom">
                 <img src="img/icons/body.svg" alt="">
                 <p class="workout-description">Функциональный тренинг</p>
+                <p class="workout-active">Фитнес-дисциплина, которая построена на отработке базовых физических действий, совершаемых ежедневно.</p>
               </div>
 
             </div>           
@@ -94,6 +99,7 @@
               <div class="workout-bottom">
                 <img src="img/icons/bottle.svg" alt="">
                 <p class="workout-description">Body sculpt</p>
+                <p class="workout-active">Включает в себя как аэробную часть, так и силовую, в которой прорабатываются все мышцы тела за одну тренировку</p>
               </div>
             </div>
           </div>
@@ -103,6 +109,7 @@
               <div class="workout-bottom">
                 <img src="img/icons/dumbbell.svg" alt="">
                 <p class="workout-description">L.A.B</p>
+                <p class="workout-active">Cиловая тренировка с акцентом на мышцы ягодиц, ног и пресса.</p>
               </div>
             </div>
           </div>
@@ -112,6 +119,7 @@
               <div class="workout-bottom">
                 <img src="img/icons/jump.svg" alt="">
                 <p class="workout-description">Силовой микс</p>
+                <p class="workout-active">Упражнения помогут создать красивый рельеф и прийти  в спортивную форму.</p>
               </div>
             </div>
           </div>
@@ -121,6 +129,7 @@
               <div class="workout-bottom">
                 <img src="img/icons/heart.svg" alt="">
                 <p class="workout-description">Дыхательные практики</p>
+                <p class="workout-active">Определенная последовательность дыхательных упражнений</p>
               </div>
             </div>
           </div>
@@ -130,6 +139,7 @@
               <div class="workout-bottom">
                 <img src="img/icons/weight.svg" alt="">
                 <p class="workout-description">Комплексная разминка</p>
+                <p class="workout-active">Подготовка тела перед физической нагрузкой.</p>
               </div>
             </div>
           </div>
@@ -138,18 +148,73 @@
     </div>
 
     <section class="mailing">
-      <h2 class="title-h2">Подпишитесь на рассылку</h2>
-      <div class="subscribe">
-        <div class="subscribe-input">
-          <input class="subscribe-email" type="text" value="Ваш e-mail">
-          <p class="subscribe-description"><input class="subscribe-checkbox" type="checkbox">Согласен с обработкой персональных данных </p>
+      <div class="wrapper">
+        <img class="mailing-circle" src="img/circle.svg" alt="">
+        <h2 class="title-h2">Подпишитесь на рассылку</h2>
+        <div class="subscribe">
+          <div class="subscribe-input">
+            <input class="subscribe-email" type="text" value="Ваш e-mail">
+            <p class="subscribe-description"><input class="subscribe-checkbox" type="checkbox">Согласен с обработкой персональных данных </p>
+          </div>
+          <a class="banner-btn" href="#">ПОДПИСАТЬСЯ</a>
         </div>
-        <a class="banner-btn" href="#">ПОДПИСАТЬСЯ</a>
       </div>
-      
     </section>
-    <section class="about">
-
-    </section>
+    <div class="wrapper">
+      <section class="about">
+        <div class="about-item about-01">
+          <h2 class="title-h2">О компании</h2>
+          <p class="about-description">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами&nbsp;и&nbsp;вы сами увидите, что мы проводим не&nbsp;только&nbsp;онлайн-тренировки.</p>
+          <a class="about-link" href="#">Записаться</a>
+        </div>
+        <div class="about-item about-02">
+          <img src="img/trainer.png" alt="">
+        </div>
+        <div class="about-item about-03">
+          <div class="flex-01">
+            <h3 class="title-h3">Экономия времени</h3>
+            <p  class="text">Не нужно тратить время на дорогу</p>
+          </div>
+          <div class="flex-02">
+            <h3 class="title-h3">Индивидуальный подход</h3>
+            <p class="text">Внимание тренера пренадлежит только вам</p>
+          </div>
+          <div class="flex-03">
+            <h3 class="title-h3">Экономия денег</h3>
+            <p class="text">Средняя цена одной тренировки&nbsp;-&nbsp;700₽</p>
+          </div>
+          <div class="flex-04">
+            <h3 class="title-h3">Опытный персонал</h3>
+            <p class="text">Стаж работы у наших тренеров от 5 лет</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-top">
+          <div class="footer-left">
+            <a class="footer-logo" href="#"><img src="img/logo.svg" alt="logo"></a>
+            <div class="footer-nav">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a class="footer-nav-link" href="">Мероприятия</a></li>
+                <li class="footer-nav-item"><a class="footer-nav-link" href="">Расписание</a></li>
+                <li class="footer-nav-item"><a class="footer-nav-link" href="">О компании</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social">
+            <img class="footer-circle" src="img/circle-small.svg" alt="">             
+            <a class="footer-link" href="">info@freefit.com</a>
+            <img class="footer-inst" src="img/IN.svg" alt="instagram">
+            <img class="footer-fb" src="img/FB.svg" alt="FB">
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-text">2020, Все права защищены</p>
+          <p class="footer-text">Сделано в рамках курса учебной платформы <a class="footer-bottom-link" href="">Frontend Blok</a></p>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
