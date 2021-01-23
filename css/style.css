@@ -49,12 +49,14 @@ body {
   max-width: 1143px;
   margin: 0 auto;
   position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .banner {
   background: url(../img/girl.png) no-repeat;
-  background-position: right;
+  background-position-x: 93%;
   margin: 0 auto 155px;
-  max-width: 1487px;
+  max-width: 1565px;
 }
 .banner-text {
   display: flex;
@@ -211,12 +213,22 @@ body {
   line-height: 125%;
   padding-top: 18px;
 }
+.checkbox-link {
+  font-size: 11px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: #2B3541;
+  opacity: 0.5;
+}
+.checkbox-link:hover {
+  opacity: 1;
+}
 .workout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: 250px 39px 71px 285px;
   grid-gap: 20px;
-  margin-bottom: 255px;
+  margin-bottom: 159px;
 }
 .workout-item {
   border: 1px solid #2B3541;
@@ -256,19 +268,19 @@ body {
 }
 .functional {
   grid-column: 1/2;
-  grid-row: 1/4;
+  grid-row: 1/2;
 }
 .body-sculp {
   grid-column: 2/3;
-  grid-row: 1/6;
+  grid-row: 1/4;
 }
 .lab {
   grid-column: 3/4;
-  grid-row: 1/5;
+  grid-row: 1/3;
 }
 .mix {
   grid-column: 1/2;
-  grid-row: 4/9;
+  grid-row: 2/5;
   position: relative;
 }
 .mix::before {
@@ -281,19 +293,22 @@ body {
   width: 100%;
   height: 100%;
 }
+.mix .workout-active {
+  display: block;
+}
 .breathing {
   grid-column: 2/3;
-  grid-row: 6/9;
+  grid-row: 4/5;
 }
 .complex {
   grid-column: 3/4;
-  grid-row: 5/9;
+  grid-row: 3/5;
 }
 .mailing {
   background: #F3F3F3;
   text-align: center;
   padding-top: 47px;
-  padding-bottom: 97px;
+  padding-bottom: 85px;
   margin-bottom: 157px;
 }
 .mailing .title-h2 {
@@ -304,29 +319,59 @@ body {
   left: 219px;
   top: -30px;
 }
-.subscribe {
-  display: flex;
-  justify-content: center;
-}
-.subscribe-input {
-  justify-content: left;
-  display: flex;
-  flex-direction: column;
-}
-.subscribe-email {
-  padding: 10px 20px;
+.mailing-input {
   font-size: 18px;
   line-height: 150%;
-  color: rgba(43, 53, 65, 0.3);
-  background: #fff;
+  color:rgba(43, 53, 65, 0.3);
+  width: 362px;
+  height: 65px;
+  padding-left: 10px;
   border: none;
+  margin-right: 20px;
 }
-.subscribe-description {
+.mailing-btn {
+  background: #FBF138;
+  box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 26px 43px;
+  color: #2B3541;
+  text-decoration: none;
+}
+.mailing-bottom {
+  max-width: 808px;
+  margin-top: 13px;
+}
+.mailing-label {
   font-size: 11px;
   line-height: 150%;
 }
-.subscribe .banner-btn {
-  align-self: start;
+input[type=checkbox] {
+  display: none;
+}
+.mailing-label {
+  padding-left: 20px;
+}
+.mailing-label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../img/checkbox-on.svg);
+  vertical-align: middle;
+  margin-right: 10px
+}
+input[type=checkbox]:checked +.mailing-label::before {
+  background: url(../img/checkbox-off.svg)
+}
+.mailing-link {
+  color: rgba(43, 53, 65, 0.5);
+}
+.mailing-link:hover {
+  color: rgba(43, 53, 65, 1);
 }
 .about {
   display: grid;
@@ -477,4 +522,64 @@ body {
 }
 .footer-bottom-link:hover {
   opacity: 1;
+}
+
+@media(max-width: 1388px) {
+  .nav {
+    max-width: 900px;
+}
+}
+@media(max-width: 1251px) {
+  .banner-title {
+    font-size: 40px;
+}
+.banner-subtitle {
+  font-size: 32px;
+}
+.banner-description,
+.banner-btn {
+  font-size: 14px;
+  margin-left: 48px;
+}
+}
+@media(max-width: 1124px) {
+  .nav {
+    max-width: 700px;
+}
+}
+@media(max-width: 1124px) {
+  .nav {
+    max-width: 650px;
+}
+.banner-top {
+  max-width: 557px;
+  padding-top: 159px;
+}
+.banner-title {
+  font-size: 32px;
+}
+.banner-subtitle {
+  font-size: 26px;
+}
+.workout-wrap {
+  max-width: 245px;
+}
+}
+@media(max-width: 1045px) {
+  .footer-top {
+    flex-direction: column;
+}
+.footer-left {
+  flex-basis: 0;
+  flex-direction: column;
+}
+.footer-social {
+  margin: 0 auto;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 58px 0;
+  margin-bottom: 63px;
+}
 }
