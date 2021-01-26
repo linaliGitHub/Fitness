@@ -33,6 +33,7 @@ body {
   transition: 0.2s ease;
   border-bottom: transparent;
   padding-bottom: 10px;
+  color: #2B3541;
 }
 .nav-link:hover {
   border-bottom: 1px solid #2B3541;
@@ -348,7 +349,11 @@ body {
   color: #2B3541;
   text-decoration: none;
   align-self: start;
+  transition: 0.2s ease;
 }
+.mailing-btn:hover {
+  background: #2B3541;
+  color: #FBF138;
 }
 .mailing-bottom {
   max-width: 808px;
