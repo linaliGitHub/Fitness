@@ -542,64 +542,64 @@ input[type=checkbox]:checked +.mailing-label::before {
 @media(max-width: 1388px) {
   .nav {
     max-width: 900px;
-}
+  }
 }
 @media(max-width: 1251px) {
   .banner-title {
     font-size: 40px;
-}
-.banner-subtitle {
-  font-size: 32px;
-}
-.banner-description,
-.banner-btn {
-  font-size: 16px;
-  margin-left: 48px;
-}
+  }
+  .banner-subtitle {
+    font-size: 32px;
+  }
+  .banner-description,
+  .banner-btn {
+    font-size: 16px;
+    margin-left: 48px;
+  }
 }
 @media(max-width: 1124px) {
   .nav {
     max-width: 700px;
-}
+  }
 }
 @media(max-width: 1124px) {
   .nav {
     max-width: 650px;
-}
-.banner-top {
-  max-width: 557px;
-  padding-top: 159px;
-}
-.banner-title {
-  font-size: 32px;
-}
-.banner-subtitle {
-  font-size: 26px;
-}
-.workout-wrap {
-  max-width: 245px;
-}
+  }
+  .banner-top {
+    max-width: 557px;
+    padding-top: 159px;
+  }
+  .banner-title {
+    font-size: 32px;
+  }
+  .banner-subtitle {
+    font-size: 26px;
+  }
+  .workout-wrap {
+    max-width: 245px;
+  }
 }
 @media(max-width: 1045px) {
   .footer-top {
     flex-direction: column;
-}
-.footer-left {
-  flex-basis: 0;
-  flex-direction: column;
-}
-.footer-social {
-  margin: 0 auto;
-}
-.about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 58px 0;
-  margin-bottom: 63px;
-}
-.events-item {
-  height: 550px;
-}
+  }
+  .footer-left {
+    flex-basis: 0;
+    flex-direction: column;
+  }
+  .footer-social {
+    margin: 0 auto;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 58px 0;
+    margin-bottom: 63px;
+  }
+  .events-item {
+    height: 550px;
+  }
 }
 @media(max-width: 1000px) {
   .burger {
@@ -655,7 +655,7 @@ input[type=checkbox]:checked +.mailing-label::before {
   }
   .footer-nav-item {
     margin-right: 51px;
-}
+  }
 }
 @media(max-width: 855px) {
   .about-link {
@@ -729,7 +729,7 @@ input[type=checkbox]:checked +.mailing-label::before {
   }
   .about-02::before {
     top: 132px;
-}
+  }
   .flex-01,
   .flex-02,
   .flex-03,
@@ -760,7 +760,7 @@ input[type=checkbox]:checked +.mailing-label::before {
   }
   .workout-wrap {
     max-width: 342px;
-}
+  }
 }
 @media(max-width: 732px) {
   .header__logo {
@@ -775,67 +775,69 @@ input[type=checkbox]:checked +.mailing-label::before {
   .banner-title,
   .title-h2 {
     font-size: 26px;
-}
-.date {
-  font-size: 12px;
-}
-.events-title,
-.schedule-date,
-.workout-date,
-.workout-description {
-  font-size: 16px;
-}
-.events-bottom {
-  justify-content: flex-start;
-}
-
-.img-01 {
-  background-image: url(../img/maraphon.png);
-  width: 165px;
-  height: 309px;
-}
-.img-02 {
-  background-image: url(../img/Vebinar\ 1.png);
-  width: 165px;
-  height: 309px;
-}
-.img-03 {
-  background-image: url(../img/Vebinar\ 2.png);
-  width: 340px;
-  height: 336px;
-}
-.workout {
-  grid-template-columns: 100%;
-}
-.workout-bottom {
-  display: flex;
-}
-.events-item::before {
-  content: "";
-  display: block;
-  background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-  opacity: 0.3;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.wrap {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.mailing-box {
-  margin-bottom: 40px;
-}
-.mailing-btn {
-  margin: 0 auto;
-}
-.mailing-input {
-  width: 340px;
-}
-.banner {
-  background-size: 340px;
-}
+  }
+  .date {
+    font-size: 12px;
+  }
+  .events-title,
+  .schedule-date,
+  .workout-date,
+  .workout-description {
+    font-size: 16px;
+  }
+  .events-bottom {
+    justify-content: flex-start;
+  }
+  .img-01 {
+    background-image: url(../img/maraphon.png);
+    width: 165px;
+    height: 309px;
+  }
+  .img-02 {
+    background-image: url(../img/Vebinar\ 1.png);
+    width: 165px;
+    height: 309px;
+  }
+  .img-03 {
+    background-image: url(../img/Vebinar\ 2.png);
+    width: 340px;
+    height: 336px;
+  }
+  .workout {
+    grid-template-columns: 100%;
+  }
+  .workout-bottom {
+    display: flex;
+  }
+  .events-item::before {
+    content: "";
+    display: block;
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mailing-box {
+    margin-bottom: 40px;
+  }
+  .mailing-btn {
+    margin: 0 auto;
+  }
+  .mailing-input {
+    width: 340px;
+  }
+  .banner {
+    background-size: 340px;
+  }
+.workout-item img {
+  margin-right: 20px;
+  }
 }
 @media(max-width: 539px) {
   .flex-01,
@@ -957,5 +959,26 @@ margin-right: 20px;
 }
 .footer-nav {
   padding-top: 20px;
+}
+.functional img {
+  width: 39px;
+}
+.body-sculp img {
+  width: 23px;
+}
+.lab img {
+  width: 46px;
+}
+.mix img {
+  width: 34px;
+}
+.breathing img {
+  width: 39px;
+}
+.complex img {
+  width: 35px;
+}
+.workout-text {
+  flex-basis: 200px;
 }
 }
