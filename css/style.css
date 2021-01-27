@@ -3,7 +3,8 @@ body {
   color: #2B3541;
 }
 .burger,
-.about-link-bottom {
+.about-link-bottom,
+.menu-btn {
   display: none;
 }
 .header {
@@ -602,8 +603,13 @@ input[type=checkbox]:checked +.mailing-label::before {
   }
 }
 @media(max-width: 1000px) {
-  .burger {
+  .burger,
+  .menu-btn {
     display: block;
+  }
+  .menu-btn {
+    border: none;
+    background-color: transparent;
   }
   .nav-list {
     display: none;
@@ -655,6 +661,28 @@ input[type=checkbox]:checked +.mailing-label::before {
   }
   .footer-nav-item {
     margin-right: 51px;
+  }
+  .burger-menu {
+    padding-left: 0;
+  }
+  .burger-item {
+    list-style-type: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #2B3541;
+  }
+  .burger-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B3541;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .burger-social {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .burger-fb {
+    margin-left: 20px;
   }
 }
 @media(max-width: 855px) {
@@ -726,9 +754,6 @@ input[type=checkbox]:checked +.mailing-label::before {
     transition: 0.2s ease;
     margin-bottom: 40px;
     margin-top: 25px;
-  }
-  .about-02::before {
-    top: 132px;
   }
   .flex-01,
   .flex-02,
@@ -845,140 +870,140 @@ input[type=checkbox]:checked +.mailing-label::before {
   .flex-03,
   .flex-04 {
     flex-basis: 100%;
-}
-.workout-active {
-  font-size: 12px;
-}
-.header {
-  padding: 37px 9px 0 9px;
-}
-.fb {
-  margin-left: 17px;
-}
-.nav {
-  max-width: 74px;
-}
-.wrapper {
-  padding-right: 6px;
-  padding-left: 11px;
-}
-.banner {
-  margin: 0 auto 79px;
-}
-.banner-description {
-  margin-left: 0px;
-  margin-bottom: 58px;
-}
-.banner-btn {
-  margin-left: 0px;
-  padding: 23px 73px;
-}
-.banner-text {
-  height: 719px;
-}
-.img-01 {
-  margin-right: 10px;
-  margin-bottom: 12px;
-}
-.img-02 {
-  margin-right: 0;
-}
-.events-bottom p {
-  font-size: 12px;
-}
-.title-h2 {
-  margin-bottom: 19px;
-}
-.events-top {
-  margin: 17px;
-}
-.date {
-  margin: 0 0 12px 0;
-}
-.events-bottom p {
-  padding: 6px 16px;
-}
-.img-03 .events-top {
-  margin: 9px;
-}
-.events {
-  margin-bottom: 56px;
-}
-.events-title {
-  width: 130px;
-}
-.workout-wrap {
-  max-width: 281px;
-}
-.workout-item img {
-margin-right: 20px;
-}
-.workout-bottom {
-  flex-wrap: wrap;
-}
-.mailing {
-  padding-top: 36px;
-  padding-bottom: 40px;
-  margin-bottom: 80px;
-}
-.mailing-circle {
-  width: 62px;
-  height: 62px;
-  left: 51px;
-  top: -18px;
-}
-.mailing-input {
-  margin-right: 0;
-  width: 313px;
-  padding-left: 25px;
-}
-.mailing .title-h2 {
-  margin-bottom: 50px;
-}
-.mailing-btn {
-  padding: 22px 99px;
-}
-.about-01 {
-  text-align: left;
-}
-.about {
-  grid-template-rows: 166px;
-  grid-gap: 23px 0;
-}
-.flex-01 {
-  margin-bottom: 31px;
-}
-.flex-02 {
-  margin-bottom: 7px;
-}
-.flex-03 {
-  margin-bottom: 30px;
-}
-.about-03 .title-h3 {
-  margin-bottom: 16px;
-}
-.footer-nav {
-  padding-top: 20px;
-}
-.functional img {
-  width: 39px;
-}
-.body-sculp img {
-  width: 23px;
-}
-.lab img {
-  width: 46px;
-}
-.mix img {
-  width: 34px;
-}
-.breathing img {
-  width: 39px;
-}
-.complex img {
-  width: 35px;
-}
-.workout-text {
-  flex-basis: 200px;
-}
+  }
+  .workout-active {
+    font-size: 12px;
+  }
+  .header {
+    padding: 37px 9px 0 9px;
+  }
+  .fb {
+    margin-left: 17px;
+  }
+  .nav {
+    max-width: 74px;
+  }
+  .wrapper {
+    padding-right: 6px;
+    padding-left: 11px;
+  }
+  .banner {
+    margin: 0 auto 79px;
+  }
+  .banner-description {
+    margin-left: 0px;
+    margin-bottom: 58px;
+  }
+  .banner-btn {
+    margin-left: 0px;
+    padding: 23px 73px;
+  }
+  .banner-text {
+    height: 719px;
+  }
+  .img-01 {
+    margin-right: 10px;
+    margin-bottom: 12px;
+  }
+  .img-02 {
+    margin-right: 0;
+  }
+  .events-bottom p {
+    font-size: 12px;
+  }
+  .title-h2 {
+    margin-bottom: 19px;
+  }
+  .events-top {
+    margin: 17px;
+  }
+  .date {
+    margin: 0 0 12px 0;
+  }
+  .events-bottom p {
+    padding: 6px 16px;
+  }
+  .img-03 .events-top {
+    margin: 9px;
+  }
+  .events {
+    margin-bottom: 56px;
+  }
+  .events-title {
+    width: 130px;
+  }
+  .workout-wrap {
+    max-width: 281px;
+  }
+  .workout-item img {
+  margin-right: 20px;
+  }
+  .workout-bottom {
+    flex-wrap: wrap;
+  }
+  .mailing {
+    padding-top: 36px;
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+  }
+  .mailing-circle {
+    width: 62px;
+    height: 62px;
+    left: 51px;
+    top: -18px;
+  }
+  .mailing-input {
+    margin-right: 0;
+    width: 313px;
+    padding-left: 25px;
+  }
+  .mailing .title-h2 {
+    margin-bottom: 50px;
+  }
+  .mailing-btn {
+    padding: 22px 99px;
+  }
+  .about-01 {
+    text-align: left;
+  }
+  .about {
+    grid-template-rows: 166px;
+    grid-gap: 23px 0;
+  }
+  .flex-01 {
+    margin-bottom: 31px;
+  }
+  .flex-02 {
+    margin-bottom: 7px;
+  }
+  .flex-03 {
+    margin-bottom: 30px;
+  }
+  .about-03 .title-h3 {
+    margin-bottom: 16px;
+  }
+  .footer-nav {
+    padding-top: 20px;
+  }
+  .functional img {
+    width: 39px;
+  }
+  .body-sculp img {
+    width: 23px;
+  }
+  .lab img {
+    width: 46px;
+  }
+  .mix img {
+    width: 34px;
+  }
+  .breathing img {
+    width: 39px;
+  }
+  .complex img {
+    width: 35px;
+  }
+  .workout-text {
+    flex-basis: 200px;
+  }
 }
