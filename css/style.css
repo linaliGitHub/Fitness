@@ -787,7 +787,7 @@ input[type=checkbox]:checked +.mailing-label::before {
     max-width: 342px;
   }
 }
-@media(max-width: 732px) {
+@media(max-width: 729px) {
   .header__logo {
     width: 78px;
   }
