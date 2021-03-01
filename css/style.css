@@ -602,7 +602,15 @@ input[type=checkbox]:checked +.mailing-label::before {
     height: 550px;
   }
 }
+@media(min-width: 1001px) {
+  .dialog {
+    display: none;
+  }
+}
 @media(max-width: 1000px) {
+  body.active {
+    overflow: hidden;
+  }
   .burger,
   .menu-btn {
     display: block;
